@@ -1,0 +1,37 @@
+<section class="section-outer-contact position-relative">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                @@include('../sections/_section-enterprise-features.html')
+                <!-- @@include('../sections/_section-what-enterprise.html') -->
+            </div>
+            <div class="col-lg-4 c-sticky" data-sticky-container>
+                <div class="contact-box py-55 px-5" data-margin-top="120" data-margin-bottom="80" data-sticky-for="992">
+                    <form class="form-contact needs-validation" novalidate>
+                        <p class="form-contact__subheader mb-0">Book a demo</p>
+                        <h3 class="form-contact__header">Contact us</h3>
+                        <div class="form-contact__input-wrap mb-4">
+                            <label class="form-label" for="firstName">First name</label>
+                            <input required id="firstName" class="form-control" type="text" aria-describedby="firstName">
+                        </div>
+                        <div class="form-contact__input-wrap mb-4">
+                            <label class="form-label" for="secondName">Last name</label>
+                            <input required id="secondName" class="form-control" type="text" aria-describedby="secondName">
+                        </div>
+                        <div class="form-contact__input-wrap mb-5">
+                            <label class="form-label" for="email">Business email</label>
+                            <input required id="email" class="form-control" type="email" aria-describedby="email">
+                        </div>
+                        <p class="form-contact__disclaimer mb-4"><small>By clicking ’Submit’, I agree to <a href="#">Terms and Conditions.</a></small></p>
+                        <button id="lead" class="btn btn-primary btn-lg">Submit</button>
+                        <script type="text/javascript">
+                            $('#$lead').click(function() {
+                              fbq('track', 'Lead');
+                            });
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,32 +1,23 @@
+{{!-- Layout --}}
 {{!< default}}
-<header class="blog-header {{#if @site.cover_image}} has-cover{{/if}}">
-	<div class="inner">
-		<div class="box blog-box">
-			<h1 class="blog-name">{{@site.title}}</h1>
-			{{#if @site.description}}
-			<span class="blog-description">{{@site.description}}</span>
-			{{/if}}
-		</div>
-		{{#if @site.cover_image}}
-		<div class="blog-cover cover">
-			<img
-			srcset="{{img_url @site.cover_image size="s"}} 320w,
-              {{img_url @site.cover_image size="m"}} 640w,
-              {{img_url @site.cover_image size="l"}} 960w,
-              {{img_url @site.cover_image size="xl"}} 1920w"
-      src="{{img_url @site.cover_image size="xl"}}"
-			alt="{{@site.title}}" />
-		</div>
-		{{/if}}
-	</div>
-</header>
 
-<div id="index" class="container">
+{{!-- Publication Cover - partials/home/publication-cover.hbs --}}
+{{> "home/publication-cover"}}
 
-	<main class="content" role="main">
+{{!-- Feed Stories --}}
+<div class="site-post container mx-auto py-vmin8">
+    <div class="js-feed-entry max-w-1100 mx-auto grid md:grid-cols-2 lg:grid-cols-12 gap-6">
+        {{#foreach posts}}
+            {{#has number="1"}}
+                {{> "story/story-grid" story_class="ss1 grid lg:col-span-full lg:grid-cols-3 gap-6"}}
+            {{else has number="5, 6"}}
+                {{> "story/story-grid" story_class="ss2 lg:col-span-6"}}
+            {{else}}
+                {{> "story/story-grid" story_class="lg:col-span-4"}}
+            {{/has}}
+        {{/foreach}}
+    </div>
 
-		{{> "loop"}}
-
-	</main>
-
+    {{!-- Pagination - partials/pagination.hbs --}}
+    {{pagination}}
 </div>

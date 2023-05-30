@@ -1,0 +1,236 @@
+<footer class="footer-light py-10 lg:pt-16 text-center lg:text-left {{#is "post"}}bg-gray-150{{/is}}">
+    <section class="mx-auto max-w-extreme px-4">
+        <div class="flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+
+            </div>
+
+            <div class="footer-copy lg:text-right text-sm">
+                &copy; {{date format="YYYY"}} <a href="#">{{@site.title}}</a>. All rights reserved. <a href="#">Privacy Policy</a>
+            </div>
+
+        </div>
+
+    </section>
+</footer>
+
+{{!-- <footer class="footer position-relative">
+    <div class="footer__outer position-relative">
+        <div class="footer__bg-img-wrap absolute">
+            @@include('./modules/_img-jpg.html', {"src": "footer-top-2", "class": "footer__bg-img object-cover", "alt":
+            ""})
+        </div>
+        <div class="footer__decor-img-wrap position-absolute d-none d-xl-block">
+            @@include('./modules/_img-png.html', {"src": "footer-decor-2", "class": "footer__decor-img", "alt":
+            "Screenshot"})
+        </div>
+        <div class="container position-relative">
+            <div class="row r-top">
+                <div class="col-12 c-support">
+                    <div class="c-support__inner">
+                        <h2 class="color-white mb-3">1400+ community members</h2>
+                        <p class="mb-6">Our community hangs out on Slack. Join us to get your
+                            questions answered and meet AdminJS developers and users.</p>
+                        <div class="c-support__btn-wrap">
+                            <a target="_blank" href="https://adminjs.page.link/slack" class="btn btn-primary btn-lg"><svg width="18px" height="18px"
+                                    viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>92CD2F76-4620-431D-AEDF-DDF3CD98543D</title>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Home-page-Final" transform="translate(-730.000000, -447.000000)"
+                                            fill="#003274">
+                                            <g id="Group-24" transform="translate(452.000000, 432.000000)">
+                                                <g id="Group-17" transform="translate(254.000000, 0.000000)">
+                                                    <g id="Group-7" transform="translate(24.000000, 12.500000)">
+                                                        <path
+                                                            d="M6.6483871,11.9790323 C7.67903226,11.9790323 8.52096774,12.8209677 8.52096774,13.8516129 L8.52096774,18.5403226 C8.52096774,19.5709677 7.67903226,20.4129032 6.6483871,20.4129032 C5.61774194,20.4129032 4.77580645,19.5709677 4.77580645,18.5403226 L4.77580645,13.8516129 C4.77580645,12.8209677 5.61774194,11.9790323 6.6483871,11.9790323 Z M11.3516129,16.6677419 C12.3822581,16.6677419 13.2241935,17.5096774 13.2241935,18.5403226 C13.2241935,19.5709677 12.3822581,20.4129032 11.3516129,20.4129032 C10.3209677,20.4129032 9.47903226,19.5709677 9.47903226,18.5403226 L9.47903226,16.6677419 L11.3516129,16.6677419 Z M3.83225806,11.9790323 L3.83225806,13.8516129 C3.83225806,14.8822581 2.99032258,15.7241935 1.95967742,15.7241935 C0.929032258,15.7241935 0.0870967742,14.8822581 0.0870967742,13.8516129 C0.0870967742,12.8209677 0.929032258,11.9790323 1.95967742,11.9790323 L3.83225806,11.9790323 Z M16.0403226,11.9790323 C17.0709677,11.9790323 17.9129032,12.8209677 17.9129032,13.8516129 C17.9129032,14.8822581 17.0709677,15.7241935 16.0403226,15.7241935 L11.3516129,15.7241935 C10.3209677,15.7241935 9.47903226,14.8822581 9.47903226,13.8516129 C9.47903226,12.8209677 10.3209677,11.9790323 11.3516129,11.9790323 L16.0403226,11.9790323 Z M6.6483871,7.27580645 C7.67903226,7.27580645 8.52096774,8.11774194 8.52096774,9.1483871 C8.52096774,10.1790323 7.67903226,11.0209677 6.6483871,11.0209677 L1.95967742,11.0209677 C0.929032258,11.0209677 0.0870967742,10.1790323 0.0870967742,9.1483871 C0.0870967742,8.11774194 0.929032258,7.27580645 1.95967742,7.27580645 L6.6483871,7.27580645 Z M16.0403226,7.27580645 C17.0709677,7.27580645 17.9129032,8.11774194 17.9129032,9.1483871 C17.9129032,10.1790323 17.0709677,11.0209677 16.0403226,11.0209677 L14.1677419,11.0209677 L14.1677419,9.1483871 C14.1677419,8.11774194 15.0096774,7.27580645 16.0403226,7.27580645 Z M11.3516129,2.58709677 C12.3822581,2.58709677 13.2241935,3.42903226 13.2241935,4.45967742 L13.2241935,9.1483871 C13.2241935,10.1790323 12.3822581,11.0209677 11.3516129,11.0209677 C10.3209677,11.0209677 9.47903226,10.1790323 9.47903226,9.1483871 L9.47903226,4.45967742 C9.47903226,3.42903226 10.3209677,2.58709677 11.3516129,2.58709677 Z M6.6483871,2.58709677 C7.67903226,2.58709677 8.52096774,3.42903226 8.52096774,4.45967742 L8.52096774,6.33225806 L6.6483871,6.33225806 C5.61774194,6.33225806 4.77580645,5.49032258 4.77580645,4.45967742 C4.77580645,3.42903226 5.61774194,2.58709677 6.6483871,2.58709677 Z"
+                                                            id="Combined-Shape" fill="#fff"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Join our community on Slack
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 c-newsletter">
+                    <form class="c-newsletter__inner needs-validation" action="https://assets.mailerlite.com/jsonp/293988/forms/78180228010084347/subscribe" method="post" id="revue-form" name="revue-form"  target="_blank">
+                        <h2 class="color-white mb-3">News and updates</h2>
+                        <p class="mb-6">Subscribe to the AdminJS Community Newsletter for regular development updates
+                            and
+                            useful
+                            materials</p>
+                        <div class="form-check align-items-center mb-4">
+                            <input class="form-check-input" required type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label form-check-label--large color-white" for="inlineCheckbox1">I agree to receive marketing communication from AdminJS
+                                <button type="button" id="newsletterTooltip" class="btn-tooltip rounded-circle p-0 d-inline-flex justify-content-center align-items-center" data-bs-offset="0,20" data-bs-container="body" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>' data-bs-html="true" title='<p class="mb-3 color-white">AdminJS is going to process the above information in order
+                                    to subscribe you to our newsletter. From time to time, we might contact you about our other services, as well as present you with additional content that may be of interest. You can unsubscribe from these communications at any time.</p>
+                                    <span>Ok, got it</span>'>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629q 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#4D70EB" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 5.33337H8.00667" stroke="#4D70EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.33301 8H7.99967V10.6667H8.66634" stroke="#4D70EB" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                  </button>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" required class="form-control" placeholder="Your email" aria-label="Your email"
+                                aria-describedby="button-addon2" name="fields[email]" />
+                            <input class="btn btn-primary" type="submit" id="member_submit" name="member[subscribe]" value="Subscribe" />
+                            <script type="text/javascript">
+                                $('#member_submit').click(function() {
+                                  fbq('track', 'Subscribe');
+                                });
+                            </script>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__decor-img-wrap position-absolute d-flex d-xl-none">
+            @@include('./modules/_img-png.html', {"src": "footer-decor-2", "class": "footer__decor-img", "alt":
+            "Screenshot"})
+        </div>
+
+    </div>
+    <div class="footer__outer-bottom position-relative">
+        <div class="footer__bottom-bg absolute">
+            @@include('./modules/_img-png.html', {"src": "footer-bottom-bg", "class": "footer__bottom-bg-picture object-cover d-none d-lg-block",
+            "alt": ""})
+            @@include('./modules/_img-png.html', {"src": "footer-bottom-bg-mob", "class": "footer__bottom-bg-picture object-cover d-block d-lg-none",
+            "alt": ""})
+        </div>
+        <div class="container position-relative">
+            <div class="row r-bottom">
+                <div class="col-lg-4 c-logo d-none d-lg-block">
+                    <img src="../../src/img/adminjs-logo.svg" alt="Logo">
+                    <p class="mb-3"><small>AdminJS is an auto-generated admin panel for your <strong>Node.js</strong>
+                            application that allows
+                            you to manage all your data in one place.</small></p>
+                    <p class="mb-0"><small>Always open-source under the <strong>MIT license</strong>.</small></p>
+                </div>
+                <div class="col-lg-4 d-block d-lg-none">
+                    <div class="row">
+                        <div class="col-12 col-sm-8 c-logo">
+                            <img src="../../src/img/adminjs-logo.svg" alt="Logo">
+                            <p class="mb-3"><small>AdminJS is auto-generated admin panel for your
+                                    <strong>Node.js</strong>
+                                    application that allows
+                                    you to manage all your data in one place.</small></p>
+                            <p class="mb-0"><small>Always open-source under the <strong>MIT license</strong>.</small>
+                            </p>
+                        </div>
+                        <div class="col-4 c-logo-inner flex-column align-items-start d-none d-sm-block">
+                            <a target="_blank" href="https://rst.software/">
+                                @@include('./modules/_img-png.html', {"src": "footer-logo-2", "class": "aws", "alt":
+                            "RST Software House Wrocław"})
+                            </a>
+                            <p class=""><small>Made with ❤️ by RST</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row r-inner">
+                        <div class="col-lg-3 col-6 c-logo-inner flex-column align-items-start d-none d-lg-block">
+                            <a target="_blank" href="https://rst.software/">
+                                @@include('./modules/_img-png.html', {"src": "footer-logo-2", "class": "aws", "alt":
+                            "RST Software House Wrocław"})
+                            </a>
+                            <p class=""><small>Made with ❤️ by RST</small></p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 mb-6 mb-lg-0 c-product">
+                            <h4 class="color-white mb-3">Product</h4>
+                            <ul class="list-unstyled footer-list mb-0">
+                                <li class="footer-list__item">
+                                    <a href="home.html#installation">
+                                        Installation
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="home.html#how-it-works">
+                                        How it works
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="home.html#features">
+                                        Features
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="home.html#testimonials">
+                                        Testimonials
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 d-none d-md-block">
+                            <h4 class="color-white mb-3">AdminJS</h4>
+                            <ul class="list-unstyled footer-list mb-0">
+                                <li class="footer-list__item">
+                                    <a target="_blank" href="https://adminjs-demo.herokuapp.com">
+                                        Demo
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a target="_blank" href="https://adminjs.page.link/slack">
+                                        Community
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="enterprise.html">
+                                        Enterprise
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 c-support-bottom">
+                            <h4 class="color-white mb-3">Support</h4>
+                            <ul class="list-unstyled footer-list mb-0">
+                                <li class="footer-list__item">
+                                    <a target="_blank" href="https://share.hsforms.com/1IedvmEz6RH2orhcL6g2UHA8oc5a" id="contactus">
+                                        Contact us
+                                    </a>
+                                    <script type="text/javascript">
+                                        $('#contactus').click(function() {
+                                          fbq('track', 'Contact');
+                                        });
+                                    </script>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a target="_blank" href="https://docs.adminjs.co">
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a target="_blank" href="https://docs.adminjs.co/tutorial-installation-instructions.html">
+                                        Tutorials
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a target="_blank" href="https://github.com/SoftwareBrothers/adminjs">
+                                        GitHub
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 c-logo-inner flex-column align-items-start d-block d-sm-none">
+                            @@include('./modules/_img-png.html', {"src": "footer-logo-2", "class": "aws", "alt":
+                            "Logo"})
+                            <p class=""><small>Made with ❤️ in RST</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r-copyright">
+                <div class="col-12 d-flex justify-content-lg-end justify-content-center">
+                    <p class="text-end mb-0">
+                        © <a href="#">AdminJS</a> 2022. All rights reserved | <a href="#">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> --}}

@@ -1,25 +1,10 @@
-<div class="extra-pagination">
-	{{pagination}}
+<div class="site-post py-vmin8 px-4">
+    <div class="js-feed-entry mx-auto max-w-1100 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{#foreach posts}}
+            {{> "story/story-grid"}}
+        {{/foreach}}
+    </div>
+
+    {{!-- Pagination - partials/pagination.hbs --}}
+    {{pagination}}
 </div>
-
-{{#foreach posts visibility="all"}}
-
-<article class="{{post_class}}">
-	<div class="inner">
-		<div class="box post-box">
-			<h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-			<span class="post-meta">
-				{{t "By"}}
-				{{authors separator=", "}}
-				{{#primary_tag}}{{t "in"}} <a class="post-meta-tag" href="{{url}}">{{name}}</a>{{/primary_tag}}
-				{{t "on"}}
-				<time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
-			</span>
-			<p class="post-excerpt">{{excerpt}}&hellip;</p>
-		</div>
-	</div>
-</article>
-
-{{/foreach}}
-
-{{pagination}}

@@ -1,0 +1,288 @@
+<section class="section-features position-relative">
+    <div id="features" class="section-features__bg absolute">
+        @@include('../modules/_img-jpg.html', {"src": "features-bg", "class": "object-cover", "alt": ""})
+    </div>
+    <div class="container position-relative">
+        <div class="row r-header">
+            <div class="col-12">
+                <h2 class="mb-4 mb-lg-3 text-center color-white">Filled with tons of features</h2>
+                <p class="mb-0 text-center color-white">The out-of-the-box version of AdminJS is pretty powerful, but
+                    its in-depth
+                    customizability is where it really shines. With a basic knowledge of React and Node.js, you can
+                    change nearly every behaviour of your admin panel.</p>
+            </div>
+        </div>
+        <div class="row r-content">
+            <div class="col-12">
+                <div class="d-none d-lg-flex align-items-start features">
+                    <div class="nav flex-row flex-lg-column nav-pills me-lg-7 me-0" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1"
+                            aria-selected="true">CRUD</button>
+                        <button class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2"
+                            type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">Data
+                            Sources</button>
+                        <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3"
+                            type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">Filtering</button>
+                        <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4"
+                            type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">Custom
+                            Actions</button>
+                        <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5"
+                            type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">Roles</button>
+                        <button class="nav-link" id="v-pills-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-6"
+                            type="button" role="tab" aria-controls="v-pills-6"
+                            aria-selected="false">Customization</button>
+                        <button class="nav-link" id="v-pills-7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-7"
+                            type="button" role="tab" aria-controls="v-pills-7" aria-selected="false">Design
+                            System</button>
+                        <button class="nav-link" id="v-pills-8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-8"
+                            type="button" role="tab" aria-controls="v-pills-8" aria-selected="false">Features</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                            aria-labelledby="v-pills-1-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">CRUD</h2>
+                                    <p class="mb-0 color-white">With AdminJS you can Create, Read, Update and Delete all
+                                        of your resources, no matter where they come from. Thanks to the tight
+                                        integration with your ORM/ODM, AdminJS picks up all the validation rules, data
+                                        types and relationships.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-1", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Data Sources</h2>
+                                    <p class="mb-0 color-white">AdminJS has a simple interface for connecting multiple data sources like SQL/noSQL databases and multiple APIs.
+                                        We already created adapters for the most popular services.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-2", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Filtering</h2>
+                                    <p class="mb-0 color-white">With AdminJS, you can easily find any record inside your
+                                        dataset. Everything thanks to the advanced filters panel which is able to narrow
+                                        your search according to multiple criteria.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-3", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Custom Actions</h2>
+                                    <p class="mb-4 color-white">If the predefined set of actions doesn’t fulfil all of
+                                        your needs, you can effortlessly implement your custom business logic by
+                                        assigning custom-built actions to all of your resources.</p>
+                                    <p class="mb-0 color-white">Actions can be added for a single record (publish
+                                        action), multiple records (bulk delete action) or even an entire resource
+                                        (export action).</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-4", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Roles</h2>
+                                    <p class="mb-0 color-white">AdminJS offers authentication and role-based access
+                                        control (RBAC) out of the box. You can easily restrict actions for every
+                                        resource or even for a particular record. Restricted users won’t be able to
+                                        see/modify things they shouldn’t.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-5", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Customisation</h2>
+                                    <p class="mb-0 color-white">Developed with customization in mind, you can modify
+                                        every part of AdminJS. Possibilities are limitless. Want to change colours,
+                                        inject custom CSS, or change how particular components are rendered? Simply fork it and adjust to your needs.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-6", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Design System</h2>
+                                    <p class="mb-0 color-white">AdminJS comes with a full-featured React-based Design
+                                        System. With it, you can build any layout using any UI element you like, and
+                                        since it’s built with styled components — you can change the look and feel of
+                                        each and every part.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-7", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
+                            <div class="tab-box">
+                                <div class="tab-box__col-1 mb-6 mb-cl-0">
+                                    <h2 class="color-white-mb-3 fw-bold color-white">Features</h2>
+                                    <p class="mb-0 color-white">Features are the way of enhancing AdminJS. They are a
+                                        set of settings which can be applied to any resource. You can create your own
+                                        features or use features created by our awesome open-source community.</p>
+                                </div>
+                                <div
+                                    class="tab-box__col-2 d-flex justify-content-center justify-content-lg-start align-items-start">
+                                    @@include('../modules/_img-png.html', {"src": "tab-8", "class": "tab-box__img",
+                                    "alt": "Screen shot"})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-features d-block d-lg-none position-relative">
+        <div class="slider-features-nav" id="sliderFeaturesNav">
+            <div class="splide slider-features__splide">
+                <div class="splide__track slider-features-nav__track">
+                    <ul class="splide__list slider-features-nav__list">
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>CRUD</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Data Sources</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Filtering</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Custom Actions</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Roles</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Customisation</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Design System</span>
+                        </li>
+                        <li class="splide__slide slider-features-nav__slide d-flex">
+                            <span>Features</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slider-features-main" id="sliderFeaturesMain">
+            <div class="splide slider-features-main__splide">
+                <div class="splide__track slider-features-main__track">
+                    <ul class="splide__list slider-features-main__list">
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">CRUD</h3>
+                            <p class="mb-8">With AdminJS you can Create, Read, Update and Delete all of your resources,
+                                no matter where they come from. Thanks to the tight integration with your ORM/ODM,
+                                AdminJS picks up all the validation rules, data types and relationships.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-1", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Data Sources</h3>
+                            <p class="mb-8">With AdminJS you can Create, Read, Update and Delete all of your resources, no matter where they come from. Thanks to the tight integration with your ORM/ODM, AdminJS picks up all the validation rules, data types and relationships.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-2", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Filtering</h3>
+                            <p class="mb-8">With AdminJS, you can easily find any record inside your dataset. Everything thanks to the advanced filters panel which is able to narrow your search according to multiple criteria.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-3", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Custom Actions</h3>
+                            <p class="mb-4 color-white">If the predefined set of actions doesn’t fulfil all of
+                                your needs, you can effortlessly implement your custom business logic by
+                                assigning custom-build actions to all of your resources.</p>
+                            <p class="mb-0 color-white">Actions can be added for a single record (publish
+                                action), multiple records (bulk delete action) or even an entire resource
+                                (export action).</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-4", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Roles</h3>
+                            <p class="mb-8">AdminJS offers authentication and role-based access control (RBAC) out of the box. You can easily restrict actions for every resource or even for a particular record. Restricted users won’t be able to see/modify things they shouldn’t.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-5", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Customisation</h3>
+                            <p class="mb-8">Developed with customization in mind, you can modify every part of AdminJS. Possibilities are limitless. Want to change colours, inject custom CSS, or change how particular components are rendered? Feel free to do just that, simply fork it and adjust to your needs.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-6", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Design System</h3>
+                            <p class="mb-8">AdminJS comes with a full-featured React-based Design System. With it, you can build any layout using any UI element you like, and since it’s build with styled components — you can change the look and feel of each and every part.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-7", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+                        <li class="splide__slide slider-features-main__slide flex-column">
+                            <h3 class="color-white mb-3">Features</h3>
+                            <p class="mb-8">Features are the way of enhancing AdminJS. They are a set of settings which can be applied to any resource. You can create your own features or use features created by our awesome open-source community.</p>
+                            <div class="slider-features-main__img-wrap d-flex justify-content-center mt-auto">
+                                @@include('../modules/_img-png.html', {"src": "tab-8", "class": "tab-box__img",
+                                "alt": "Screen shot"})
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
