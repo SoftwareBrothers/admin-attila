@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-ExtraBold.woff2") format("woff2"), url("../fonts/TTNormsPro-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Bold.woff2") format("woff2"), url("../fonts/TTNormsPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/TTNormsPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Regular.woff2") format("woff2"), url("../fonts/TTNormsPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTNormsPro";
+  src: url("../fonts/TTNormsPro-Light.woff2") format("woff2"), url("../fonts/TTNormsPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+

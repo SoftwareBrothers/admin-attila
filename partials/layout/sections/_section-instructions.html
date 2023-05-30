@@ -1,0 +1,132 @@
+<section class="section-instructions d-none">
+    <div class="container">
+        <div class="row r-title mb-7 mb-lg-9">
+            <div class="col-12">
+                <h2 class="mb-3 text-center">Installation instructions</h2>
+                <p class="mb-0 text-center">Launching the admin panel takes couple of minutes, but having all these
+                    features out of the box you can save weeks of work. See how simple is that.</p>
+            </div>
+        </div>
+        <div class="row r-content">
+            <div class="col-12">
+                <div class="r-content__inner">
+                    <div class="instructions mb-lg-7 mb-6">
+                        <div class="instructions__header d-flex align-items-center mb-4">
+                            <span
+                                class="instructions__step d-inline-flex justify-content-center align-items-center me-3 fw-bold">1</span>
+                            <p class="mb-0">Choose management package</p>
+                        </div>
+                        <ul class="instructions-list list-unstyled mb-0 d-none d-lg-flex">
+                            <li class="instructions-list__item">
+                                <button id="yarn" class="btn btn-instructions active">yarn</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="npm" class="btn btn-instructions">npm</button>
+                            </li>
+                        </ul>
+                        <select class="form-select" aria-label="Pick your option" id="packageManager">
+                            <option value="yarn" selected>yarn</option>
+                            <option value="npm">npm</option>
+                        </select>
+                    </div>
+                    <div class="instructions mb-lg-7 mb-6">
+                        <div class="instructions__header d-flex align-items-center mb-4">
+                            <span
+                                class="instructions__step d-inline-flex justify-content-center align-items-center me-3 fw-bold">2</span>
+                            <p class="mb-0">Choose plugin for your favourite Node.js framework</p>
+                        </div>
+                        <ul class="instructions-list list-unstyled mb-0 d-none d-lg-flex">
+                            <li class="instructions-list__item">
+                                <button id="Expressjs" class="btn btn-instructions active">Expressjs</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="HapiJS" class="btn btn-instructions">HapiJS</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="Nestjs" class="btn btn-instructions">Nest.js</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="FirebaseFunctions" class="btn btn-instructions">Firebase Functions</button>
+                            </li>
+                        </ul>
+                        <select class="form-select" aria-label="Pick your option" id="nodeFramework">
+                            <option value="Expressjs" selected>Expressjs</option>
+                            <option value="HapiJS">HapiJS</option>
+                            <option value="Nestjs">Nest.js</option>
+                            <option value="FirebaseFunctions">Firebase Functions</option>
+                        </select>
+                    </div>
+                    <div class="instructions mb-6 mb-lg-9">
+                        <div class="instructions__header d-flex align-items-center mb-4">
+                            <span
+                                class="instructions__step d-inline-flex justify-content-center align-items-center me-3 fw-bold">3</span>
+                            <p class="mb-0">Choose your ORM/ODM adapter</p>
+                        </div>
+                        <ul class="instructions-list list-unstyled mb-0 d-none d-lg-flex">
+                            <li class="instructions-list__item">
+                                <button id="Sequelize" class="btn btn-instructions active">Sequelize</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="Mongoose" class="btn btn-instructions">Mongoose</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="TypeORM" class="btn btn-instructions">TypeORM</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="FirebaseDatastore" class="btn btn-instructions">Firebase Datastore</button>
+                            </li>
+                            <li class="instructions-list__item">
+                                <button id="Hasura" class="btn btn-instructions">Hasura</button>
+                            </li>
+                        </ul>
+                        <select class="form-select" aria-label="Pick your option" id="ormodmAdapter">
+                            <option value="Sequelize" selected>Sequelize</option>
+                            <option value="Mongoose">Mongoose</option>
+                            <option value="TypeORM">TypeORM</option>
+                            <option value="FirebaseDatastore">Firebase Datastore</option>
+                            <option value="Hasura">Hasura</option>
+                        </select>
+                    </div>
+                    <div class="console d-flex mb-55 mb-lg-3 d-flex align-items-start align-items-md-center">
+                        <div class="console__window me-md-3 me-0 d-flex align-items-center">
+                            <code id="code2" class="mb-0">yarn add admin-bro @admin-bro-express @admin-bro-mongoose
+                                mongoose @admin-bro/sequelize pg</code>
+                        </div>
+                        <button class="btn btn-copy d-inline-flex justify-content-center align-items-center" id="copy2">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>8BF5DC21-55DF-49AF-93A2-A5270C4CB749</title>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Home-page-Final" transform="translate(-1184.000000, -1772.000000)">
+                                        <g id="Group-40" transform="translate(1168.000000, 1756.000000)">
+                                            <g id="Group" transform="translate(16.000000, 16.000000)">
+                                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                                <rect id="Rectangle" stroke="#FFFFFF" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round" x="8" y="8"
+                                                    width="12" height="12" rx="1.66666667"></rect>
+                                                <path
+                                                    d="M16,8 L16,6 C16,4.8954305 15.1045695,4 14,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,14 C4,15.1045695 4.8954305,16 6,16 L8,16"
+                                                    id="Path" stroke="#FFFFFF" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="btn-wrap d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                <path
+                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                            Download Example App</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

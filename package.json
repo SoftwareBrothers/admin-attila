@@ -1,89 +1,238 @@
 {
-  "name": "attila",
-  "description": "Ghost Theme",
-  "demo": "https://attila.peteramende.de",
-  "version": "3.6.1",
+  "name": "simply",
+  "description": "simply theme for ghost by @GodoFredoNinja",
+  "demo": "https://godofredo.ninja",
+  "version": "0.4.0",
   "engines": {
     "ghost": ">=5.0.0"
   },
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "screenshots": {
-    "desktop": "src/screenshot-desktop.jpg",
-    "mobile": "src/screenshot-mobile.jpg"
+    "desktop": "screenshot.jpg"
   },
   "author": {
-    "name": "Peter Amende",
-    "email": "hey@peteramende.de",
-    "url": "https://peteramende.de"
+    "name": "GodoFredo",
+    "email": "hello@godofredo.ninja",
+    "url": "https://godofredo.ninja"
   },
   "gpm": {
     "type": "theme",
     "categories": [
       "Minimal",
-      "Personal Blogs"
+      "Magazine",
+      "Blog"
     ]
   },
   "keywords": [
-    "ghost-theme",
     "ghost",
-    "theme"
+    "theme",
+    "ghost-theme",
+    "GodoFredoNinja"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zutrinken/attila.git"
+    "url": "https://github.com/godofredoninja/simply"
   },
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "grunt": "^1.5.3",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-compress": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^5.0.1",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^3.1.0",
-    "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^7.0.3"
+  "bugs": {
+    "url": "https://github.com/godofredoninja/simply/issues",
+    "email": "hello@godofredo.ninja"
   },
   "config": {
-    "posts_per_page": 8,
+    "posts_per_page": 18,
     "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
       "s": {
-        "width": 320
+        "width": 300
       },
       "m": {
-        "width": 640
+        "width": 600
       },
       "l": {
-        "width": 960
+        "width": 1000
       },
       "xl": {
-        "width": 1920
+        "width": 2000
       }
     },
-    "card_assets": true,
+    "card_assets": {
+      "exclude": [
+        "bookmark",
+        "blockquote"
+      ]
+    },
     "custom": {
+      "header": {
+        "type": "select",
+        "options": [
+          "Default",
+          "Drop Down Menu"
+        ],
+        "default": "Default"
+      },
+      "footer": {
+        "type": "select",
+        "options": [
+          "Default",
+          "Dark",
+          "No Secondary Navigation"
+        ],
+        "default": "Default"
+      },
       "color_scheme": {
         "type": "select",
         "options": [
           "Light",
           "Dark",
-          "System"
+          "Auto"
         ],
-        "default": "System"
+        "default": "Auto"
       },
-      "disqus_shortname": {
-          "type": "text",
-          "default": "",
-          "group": "post"
+      "pagination": {
+        "type": "select",
+        "options": [
+          "Infinite Scroll",
+          "Pagination Number"
+        ],
+        "default": "Infinite Scroll"
       },
-      "darkmode_accent_color": {
+      "story_meta": {
+        "type": "select",
+        "options": [
+          "Author",
+          "Read More"
+        ],
+        "default": "Author"
+      },
+      "publication_cover": {
+        "type": "select",
+        "options": [
+          "None",
+          "Featured",
+          "Featured Slider",
+          "Cover"
+        ],
+        "default": "Cover",
+        "group": "homepage"
+      },
+      "publication_cover_title": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "publication_cover_description": {
+        "type": "text",
+        "group": "homepage"
+      },
+      "publication_cover_color": {
         "type": "color",
-        "default": "#ff6633"
+        "default": "#ffffff",
+        "group": "homepage"
+      },
+      "publication_cover_img": {
+        "type": "image",
+        "group": "homepage"
+      },
+      "post_font": {
+        "type": "select",
+        "options": [
+          "font-sans",
+          "font-serif"
+        ],
+        "default": "font-serif",
+        "group": "post"
+      },
+      "show_newsletter": {
+        "type": "boolean",
+        "default": false,
+        "group": "post"
+      },
+      "show_prev_and_next_post": {
+        "type": "boolean",
+        "default": true,
+        "group": "post"
+      },
+      "newsletter_text": {
+        "type": "text",
+        "default": "Sign up for more like this",
+        "group": "post"
       }
     }
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "cssnano": {
+    "preset": [
+      "advanced",
+      {
+        "reduceIdents": false
+      }
+    ]
+  },
+  "scripts": {
+    "build": "gulp build",
+    "prod": "cross-env NODE_ENV=production gulp production --production",
+    "dev": "gulp development",
+    "lint:js": "standard src/js/**/*.js gulpfile.js",
+    "lint:css": "stylelint src/css/**/*.css",
+    "lint": "yarn lint:js && yarn lint:css",
+    "test": "yarn lint && gscan .",
+    "scan": "gscan .",
+    "deploy": "gulp deploy"    
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/runtime": "^7.18.6",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
+    "@tryghost/admin-api": "^1.13.2",
+    "autoprefixer": "^10.4.7",
+    "babelify": "^10.0.0",
+    "beeper": "^2.1.0",
+    "browserify": "^17.0.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.12",
+    "cssnano-preset-advanced": "^5.3.8",
+    "del": "^6.1.1",
+    "dotenv": "^16.0.3",    
+    "gscan": "^4.31.2",
+    "gulp": "^4.0.2",
+    "gulp-header": "^2.0.9",
+    "gulp-if": "^3.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.1.0",
+    "merge-stream": "^2.0.0",
+    "postcss": "^8.4.14",
+    "postcss-discard-comments": "^5.1.2",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.0",
+    "precss": "^4.0.0",
+    "pump": "^3.0.0",
+    "standard": "^17.0.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recommended": "^9.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "infinite-scroll": "^4.0.1",
+    "lazysizes": "^5.3.2",
+    "medium-zoom": "^1.0.6",
+    "normalize.css": "^8.0.1",
+    "prismjs": "^1.28.0",
+    "tailwindcss": "^3.1.6"
+  }
 }

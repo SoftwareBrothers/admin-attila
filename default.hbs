@@ -1,111 +1,111 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+<!--
+    Design by:
+    ——————————
+        GODO FREDO
+        ✉ https://godofredo.ninja
+        ✎ @GodoFredoNinja
+        ✈ Lima - Perú
+-->
+<html lang="{{@site.locale}}"{{#match @custom.color_scheme "Dark"}} class="dark"{{/match}}>
 <head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	{{!-- Document Settings --}}
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
 
-	{{!-- Base Meta --}}
-	<title>{{meta_title}}</title>
-	<meta name="HandheldFriendly" content="True" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	{{!-- Styles'n'Scripts --}}
-	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    <script>
+    {{#match @custom.color_scheme "Auto"}}
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.querySelector('html').classList.add('dark');
+			localStorage.theme = 'dark';
+		} else {
+			document.querySelector('html').classList.remove('dark');
+			localStorage.theme = '';
+		}
 
-	<script>
-			var siteUrl = '{{@site.url}}';
-	</script>
-
-	<script>
-			var localTheme = localStorage.getItem('attila_theme');
-			switch (localTheme) {
-					case 'dark':
-							document.documentElement.classList.add('theme-dark');
-							break;
-					case 'light':
-							document.documentElement.classList.add('theme-light');
-							break;
-					default:
-							break;
+		window.matchMedia('(prefers-color-scheme: dark)')
+		.addEventListener(
+			'change',
+			function (e) {
+				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					document.querySelector('html').classList.add('dark');
+					localStorage.theme = 'dark';
+				} else {
+					document.querySelector('html').classList.remove('dark');
+					localStorage.theme = '';
+				}
 			}
-	</script>
+		)
 
-	{{#match @custom.color_scheme "Dark"}}
-		<script>localStorage.setItem('attila_theme', 'dark');</script>
-		<style>.js-theme {display:none!important;}</style>
-	{{/match}}
+    {{else}}
+        if (localStorage.theme === 'dark') {
+            document.querySelector('html').classList.add('dark');
+        } else if (localStorage.theme === 'light') {
+            document.querySelector('html').classList.remove('dark');
+        }
+    {{/match}}
+    </script>
 
-	{{#match @custom.color_scheme "Light"}}
-		<script>localStorage.setItem('attila_theme', 'light');</script>
-		<style>.js-theme {display:none!important;}</style>
-	{{/match}}
+    {{!-- Fonts -> Inter=400,500,600,700 PT Serift=400,700 --}}
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"></noscript>
+    {{!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> --}}
 
-	{{#match @custom.color_scheme "!=" "Light"}}
-		{{#if @custom.darkmode_accent_color}}
-			<style>
-				.theme-dark:root {
-				  --ghost-accent-color: {{@custom.darkmode_accent_color}};
-				}
-				@media (prefers-color-scheme: dark) {
-				  html:not(.theme-light):root {
-				    --ghost-accent-color: {{@custom.darkmode_accent_color}};
-				  }
-				}
-			</style>
-		{{/if}}
-	{{/match}}
+    {{!-- Styles --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}"/>
+    {{!-- <style>{{> "main-styles"}}</style> --}}
 
-	{{ghost_head}}
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+
+    {{!-- Block for Headers --}}
+    {{{block "header"}}}
 </head>
+<body class="{{block "special_body_class"}}">
+    <div class="simply-viewport flex flex-col justify-start">
+        {{!-- Header Content with User Account ./partials/layout/header-user-account.hbs --}}
+        {{#match @custom.header "Default"}}{{> "layout/header"}}{{/match}}
 
-<body class="{{body_class}}">
+        {{!-- Header With Drop Down --}}
+        {{#match @custom.header "Drop Down Menu"}}{{> "layout/header" hasDropDown=true}}{{/match}}
 
-	<div class="nav-header">
-		<nav class="nav-wrapper" aria-label="{{t "Main"}}">
-				{{#if @site.logo}}
-				<span class="logo">
-					<a href="{{@site.url}}" title="{{t "Home"}}"><img src="{{@site.logo}}" alt="{{t "Logo"}}" /></a>
-				</span>
-				{{/if}}
-				{{navigation}}
-				{{> "navigation-meta"}}
-		</nav>
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+        <main class="simply-main relative min-h-lg">{{{body}}}</main>
 
-		<div class="nav-wrapper-control">
-			<div class="inner">
-				<a class="nav-menu" role="button"><i class="icon icon-menu" aria-hidden="true"></i>{{t "Menu"}}</a>
-				<a class="nav-search" title="{{t "Search"}}" role="button" data-ghost-search><i class="icon icon-search" aria-hidden="true"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="nav-close" role="button" aria-label="{{t "Close"}}"></div>
+        {{!-- Footer Not Menu ./partials/layout/footer-not-menu.hbs --}}
+        {{#match @custom.footer "No Secondary Navigation"}}{{>"layout/footer-not-menu"}}{{/match}}
+    </div>
 
-	<section class="page-wrapper">
+    {{!-- Loandig Bar --}}
+    <div class="loadingBar top-0 fixed right-0 left-0 hidden"></div>
 
-		{{{body}}}
+    {{!-- Icons --}}
+    {{> "icons/icons-symbol-defs"}}
 
-		<div class="nav-footer">
-			<nav class="nav-wrapper" aria-label="{{t "Footer"}}">
-				<span class="nav-copy">{{@site.title}} &copy; {{date format='YYYY'}}  <a class="nav-rss" title="RSS" href="{{@site.url}}/rss/" target="_blank"><i class="icon icon-rss" aria-hidden="true"></i></a></span>
-				{{#if @site.secondary_navigation}}
-				{{navigation type="secondary"}}
-				{{/if}}
-				<span class="nav-credits">{{t "Published with"}} <a href="https://ghost.org">Ghost</a> &bull; {{t "Theme" }} <a href="https://github.com/zutrinken/attila">Attila</a> &bull; <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme"><span class="theme-icon"></span><span class="theme-text">System theme</span> </a> </span>
-			</nav>
-		</div>
+    {{!-- Scripts URL --}}
+    <script>
+        var prismJs = '{{asset "scripts/prismjs.js"}}';
+        var prismJsComponents = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/';
+    </script>
 
-	</section>
+    {{!-- Ghost outputs important scripts and data with this tag --}}
+    {{ghost_foot}}
 
-	{{!-- Load basic scripts --}}
-	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+    {{!-- script --}}
+    {{{block "scripts"}}}
 
-	{{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
-	{{{block "scripts"}}}
+    {{!-- Main scripts --}}
+    <script src="{{#is "post, page"}}{{asset "scripts/post.js"}}{{else}}{{asset "scripts/main.js"}}{{/is}}"></script>
 
-	{{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
-	{{ghost_foot}}
-
+    {{!-- Pagination Infinite Scroll --}}
+    {{#match @custom.pagination "Infinite Scroll"}}{{#if pagination.next}}<script src="{{asset "scripts/pagination.js"}}" defer async></script>{{/if}}{{/match}}
 </body>
 </html>

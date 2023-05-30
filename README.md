@@ -1,96 +1,257 @@
-# Attila
+<p align="center">
+  <a href="https://godofredo.ninja/ghost-theme/simply/">
+    <img src="https://user-images.githubusercontent.com/10253167/103450308-a2757c00-4c82-11eb-8bc3-29b09520fc58.png" width="150px" alt="Simply free theme for Ghost" />
+  </a>
+</p>
 
-A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [attila.peteramende.de](https://attila.peteramende.de/)
+<p align="center">
+    <a href="https://godofredo.ninja/ghost-theme/simply/introduction">Docs</a>
+    ·
+    <a href="https://godofredo.ninja/ghost-theme/showcase/">Showcase</a>
+    ·
+    <a href="https://github.com/godofredoninja/simply/graphs/contributors">Contributing</a>
+    ·
+    <a href="https://www.paypal.me/godofredoninja">PayPal</a>
+    ·
+    <a href="https://twitter.com/godofredoninja">Twitter</a>
+    <br /><br />
+    <a href="https://github.com/TryGhost/Ghost">
+        <img src="https://img.shields.io/badge/Ghost-4.x-brightgreen.svg" alt="Ghost version" />
+    </a>
+    <a href="https://www.paypal.me/godofredoninja">
+        <img src="https://img.shields.io/badge/donate-paypal-blue.svg" alt="Donate" />
+    </a>
+    <a href="https://opencollective.com/simply">
+        <img src="https://opencollective.com/simply/tiers/badge.svg" alt="opencollective" />
+    </a>
+</p>
 
-## ♥️ Support
+<p align="center">
+    Hello :sunglasses:
+    <br />
+    I created this theme for <a href="https://github.com/tryghost/ghost/">Ghost</a> with inspiration from <a href="https://medium.com/">Medium</a>.
+    <br />
+    It is available for free so you can use on your site.
+</p>
 
-You can [buy me a drink](https://paypal.me/zutrinken) if you enjoy using Attila. Cheers 🍻
+<p align="center">
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y7UB5Q8GVN3HN&source=url">
+        <img src="https://user-images.githubusercontent.com/10253167/103444000-877b1b80-4c32-11eb-8377-7bedd46dbdf8.gif" alt="donate" />
+    </a>
+</p>
 
-## 📷 Screenshot
+&nbsp;
 
-<img src="https://raw.githubusercontent.com/zutrinken/attila/master/src/screenshot.png" />
+[![Simply free theme for ghost](https://user-images.githubusercontent.com/10253167/162076408-0356f347-6d0b-47ad-a640-e8ee7a2494af.jpg)](https://godofredo.ninja/ghost-theme/simply/)
 
-## ⭐️ Features
+## Featured
 
-* Theme options
-* Responsive layout
-* Light and Dark Mode
-* Search support
-* Post reading progress
-* Code highlight including line numbers
-* Comments and Disqus (Theme option)
-* Ghost accent color
+- Simply Settings
+  - [Social Media](https://godofredo.ninja/ghost-theme/simply/settings/#socialmedia)
+  - [Search](https://godofredo.ninja/ghost-theme/simply/settings/#search)
+  - [Logo Light / Dark Mode](https://godofredo.ninja/ghost-theme/simply/settings/#logolightdarkmode)
+- Site wide
+  - [Header](https://godofredo.ninja/ghost-theme/simply/layouts/#header)
+    - Defautl
+    - DropDown Menu
+  - [Footer](https://godofredo.ninja/ghost-theme/simply/layouts/#footer)
+    - Default
+    - Dark
+    - No Secondary Navigation
+  - [Color Scheme](https://godofredo.ninja/ghost-theme/simply/settings/#colorscheme)
+    - Auto (default)
+    - Dark Mode
+    - Light Mode
+  - [Pagination](https://godofredo.ninja/ghost-theme/simply/settings/#pagination)
+    - Infinite Scroll (default)
+    - Pagination Number
+  - [Membership](https://godofredo.ninja/ghost-theme/simply/members/)
+    - [Disable Membership](https://godofredo.ninja/ghost-theme/simply/members/#disablemembership)
+- [Homepage](https://godofredo.ninja/ghost-theme/simply/settings/#homepage)
+  - [Publication cover](https://godofredo.ninja/ghost-theme/simply/settings/#homepage)
+    - None
+    - Featured -> Latest Featured Article
+    - Featured Slider -> 3 Latest Articles
+    - Cover (default)
+      - Publication cover title
+      - Publication cover description
+      - Publication cover color
+      - Publication cover img
+- Post
+  - [Post Font](https://godofredo.ninja/ghost-theme/simply/settings/#postfont)
+    - font-serif (default)
+    - font-sans
+  - [Newsletter](https://godofredo.ninja/ghost-theme/simply/settings/#newsletter)
+    - Show / Hide
+    - Newsletter Text
+  - Comments
+    - [Ghost Native Comments](https://ghost.org/help/commenting/)
+    - [Disqus Comments](https://godofredo.ninja/ghost-theme/simply/settings/#disquscomments)
+    - [Facebook Comments](https://godofredo.ninja/ghost-theme/simply/settings/#facebookcomments)
+    - [Hyvor Talk Comments](https://godofredo.ninja/ghost-theme/simply/settings/#hyvortalk)
+- [Publication Language](./languages.md)
+  - `en` — English default language
+  - `es` — Español
+  - `de` — German by [dkbast](https://github.com/dkbast)
+  - `tr` — Turkish by [Mertcan GÖKGÖZ](https://github.com/MertcanGokgoz), [@tolgaaaltas](https://github.com/tolgaaaltas)
+  - `fr-CA` — Canadian French by [Pascal Andy](https://github.com/pascalandy)
+  - `ru` — Russian by [Partizan007](https://github.com/partizan007)
+  - `vi` — Vietnamese by [ping](https://github.com/everping)
+  - `fr` — French by [ping](https://github.com/StanGirard)
+  - `it` — Italian by [Marco Sanson](https://github.com/marcosanson)
+  - `id` — Indonesian by [Adryan Eka Vandra](https://github.com/adryanev)
+  - `pt-BR` — Brazilian by [Daniel Pereira](https://github.com/danieldeev), [Alexandre "Lekler"](https://github.com/lekler)
+  - `uz` — Uzbek by [Shukrullo Turgunov](https://github.com/vodiylik)
+  - `pl` — Polish by [Anarion](https://github.com/anarion80)
+  - `nl` — Dutch by [exbu](https://github.com/exbu)
+- Home Page
+  - [Default](https://godofredo.ninja/ghost-theme/simply/home-page/#default)
+  - [Featured](https://godofredo.ninja/ghost-theme/simply/home-page/#featured)
+  - [Medium](https://godofredo.ninja/ghost-theme/simply/home-page/#medium)
+  - [Sidebar](https://godofredo.ninja/ghost-theme/simply/home-page/#sidebar)
+  - [Grid](https://godofredo.ninja/ghost-theme/simply/home-page/#grid)
+  - [Personal](https://godofredo.ninja/ghost-theme/simply/home-page/#personal)
+  - [Archive](https://godofredo.ninja/ghost-theme/simply/home-page/#archivepage)
+  - [Featured with Slider](https://godofredo.ninja/ghost-theme/simply/home-page/#featuredwithslider)
+  - [Medium with Sidebar](https://godofredo.ninja/ghost-theme/simply/home-page/#mediumwithsidebar)
+  - [Photographer](https://godofredo.ninja/ghost-theme/simply/home-page/#photographer)
+- Post Format
+  - [Post Default](https://godofredo.ninja/ghost-theme/simply/post-format/#postdefault)
+  - [Post Full](https://godofredo.ninja/ghost-theme/simply/post-format/#postfull)
+  - [Post Wide](https://godofredo.ninja/ghost-theme/simply/post-format/#postwide)
+  - [Post Header Image](https://godofredo.ninja/ghost-theme/simply/post-format/#postheaderimage)
+  - [Post Image](https://godofredo.ninja/ghost-theme/simply/post-format/#post-image)
+  - [Post Image Right](https://godofredo.ninja/ghost-theme/simply/post-format/#postimageright)
+  - [Post Sidebar](https://godofredo.ninja/ghost-theme/simply/post-format/#post-sidebar)
+  - [Post not Image](https://godofredo.ninja/ghost-theme/simply/post-format/#postnotimage)
+  - [Post Toc](https://godofredo.ninja/ghost-theme/simply/post-format/#posttoc)
+- Page Format
+  - Page Default
+  - Page Toc
+- Page
+  - [Contact](https://godofredo.ninja/ghost-theme/simply/contact-page/)
+  - [Podcast](https://godofredo.ninja/ghost-theme/simply/podcast-page/)
+  - [Portfolio](https://godofredo.ninja/ghost-theme/simply/portfolio-page/)
+  - 404
+- Archive
+  - [Authors Page](https://godofredo.ninja/ghost-theme/simply/authors-and-tags-page/#authorspage)
+  - [Tags Page](https://godofredo.ninja/ghost-theme/simply/authors-and-tags-page/#tagspage)
+- [Kusi Doc](https://godofredo.ninja/ghost-theme/simply/kusi-doc/) for the documentation of your project
+- [AMP](https://github.com/godofredoninja/Hodor-AMP-Ghost) Template
+- Post and Page
+  - [Prism supported all syntax](https://prismjs.com/index.html#supported-languages)
+  - Medium style image zoom
+  - Video Responsive
+    - Video
+    - YouTube
+    - Vimeo
+    - kickstarter
+    - Dailymotion
+- Post Content
+  - Related Articles
+  - Social share buttons support for posts
+  - Previous and next Post
+- Sidebar
+  - 3 featured articles on the home page
+  - 3 lates articles
+  - Tag Cloud
+- Lazy Loading for images
+- Tracking [Google Tag Manager](https://godofredo.ninja/ghost-theme/simply/tracking-google-tag-manager/)
 
-## 🌍 Localization
+## Automate theme deployment via Ghost API
 
-🟩 Up to date  🟧 Missing strings
+- Visit ghost admin page > settings > integrations
+- At the bottom of that page, click the button to `Add custom integration`
+- Name the new custom integration any thing you like - say - `automated-updates` and save.
+- Copy the Admin API key 
+- Create a file named `.env` in the theme folder 
+- Paste the Admin API key in the `.env` file as shown below.
+- Do not git commit push the `.env` file. 
+- I have already made sure to .gitignore the `.env` file to make sure you don't accidentally spill your secret Admin API key.
+- Also, in the same `.env` file, replace the API URL - which the URL where your site is currently located
+```
+GHOST_API_URL=https://domain.TLD
+GHOST_ADMIN_API_KEY=provideyouradminapikeyfromtheghostdashboard
+THEME_NAME=simply
+API_VERSION="v5.0"
+```
+- run the following conmmand to deploy your theme updates to your ghost installation 
+```
+yarn deploy
+```
+or if you prefer npm over yarn
+```
+npm run deploy 
+```
+- You will see that the updates you made in the theme locally are now deployed and activated in your ghost setup.
 
-| Code | Flag | Language | Status | Translator |
-| :--: | :--: | :------: | :----: | :--------: |
-| `en` | 🇬🇧 | English | 🟩 | |
-| `de` | 🇩🇪 | German | 🟩 | |
-| `es` | 🇪🇸 | Spanish | 🟩 | [r1p](https://github.com/r1p) |
-| `fr` | 🇫🇷 | French | 🟩 | [robink](https://github.com/robink), [alsyia](https://github.com/alsyia) |
-| `it` | 🇮🇹 | Italian | 🟩 | [fmaida](https://github.com/fmaida), [undrivendev](https://github.com/undrivendev) |
-| `no` | 🇳🇴 | Norwegian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve), [oisann](https://github.com/oisann), [Givemeurcookies](https://github.com/givemeurcookies) |
-| `zh` | 🇨🇳 | Chinese | 🟩 | [hao-lee](https://github.com/hao-lee), [izumiko](https://github.com/izumiko), [emperorjoker](https://github.com/emperorjoker) |
-| `zh_tw` | 🇨🇳 | Chinese Traditional | 🟩 | [Petingo](https://github.com/Petingo)
-| `id` | 🇮🇩 | Indonesian | 🟧 | [simplyeazy](https://github.com/simplyeazy) |
-| `ro` | 🇷🇴 | Romanian | 🟧 | [cdorin93](https://github.com/cdorin93) |
-| `ru` | 🇷🇺 | Russian | 🟩 | [schamberg97](https://github.com/schamberg97), [atjanov](https://github.com/atjanov) |
-| `tr` | 🇹🇷 | Turkish | 🟩 | [cgrgrbz](https://github.com/cgrgrbz), [electricalgorithm](https://github.com/electricalgorithm) |
-| `sv` | 🇸🇪 | Swedish | 🟩 | [martenj77](https://github.com/martenj77), [LarssonOliver](https://github.com/LarssonOliver) |
-| `cs` | 🇨🇿 | Czech | 🟩 | [lunakv](https://github.com/lunakv), [rdolezel](https://github.com/rdolezel) |
-| `pt` | 🇵🇹 | Portuguese | 🟧 | [matheusvanzan](https://github.com/matheusvanzan) |
-| `vi` | 🇻🇳 | Vietnamese | 🟩 | [JustHmmmm](https://github.com/justhmmmm), [mastoduy](https://github.com/mastoduy) |
-| `el` | 🇬🇷 | Greek | 🟧 | [thiodordelis](https://github.com/thiodordelis) |
-| `dk` | 🇩🇰 | Danish | 🟩 | [jmayntzhusen](https://github.com/jmayntzhusen), [tmlmt](https://github.com/tmlmt) |
-| `ar` | | Arabic | 🟧 | [pop-eax](https://github.com/pop-eax) |
-| `ca` | | Catalan | 🟧 | [arthurnoerve](https://github.com/arthurnoerve) |
-| `lt` | 🇱🇹 | Lithuanian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve) |
-| `nl` | 🇳🇱 | Dutch | 🟧 | [gkdp](https://github.com/gkdp) |
-| `pl` | 🇵🇱 | Polish | 🟩 | [filipolszewski](https://github.com/filipolszewski), [MrBoombastic](https://github.com/mrboombastic) |
-| `eo` | | Esperanto | 🟧 | [ebanDev](https://github.com/ebanDev) |
-| `ga` | | Galego | 🟩 | [r1p](https://github.com/r1p) |
-| `uk` | 🇺🇦 | Ukrainian | 🟩 | [Rakanskiy](https://github.com/rakanskiy), [krupenik](https://github.com/krupenik), [vadimkin](https://github.com/vadimkin) |
-| `ja` | 🇯🇵 | Japanese | 🟩 | [emperorjoker](https://github.com/emperorjoker) |
-| `fa` | | Farsi | 🟩 | [ItsAminZamani](https://github.com/ItsAminZamani) |
+Now you can iteratively edit and deploy and edit and deploy without leaving your command line :)
 
-## 🔠 Setup custom google fonts
+You can also incorporate this deploy step in your CICD pipeline if you use any.
 
-1. Go to [fonts.google.com](https://fonts.google.com/) and choose a font.
-2. Choose __Embed__ and copy the `<link>` code.
-3. Go to __Code injection__.  
-4. Add this to __Blog Header__:  
-````html
-<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --font-primary: 'Mukta', sans-serif;
-    --font-secondary: 'Crimson Text', serif;
-  }
-</style>
-````
+## Contributing
 
-## ⚙️ Development
+Im always looking for contributors of all skill levels! If you're looking to ease your way into the project, try out a [good first issue](https://github.com/godofredoninja/simply/labels/%F0%9F%8C%B1%20good%20first%20issue).
 
-Install [Grunt](https://gruntjs.com/getting-started/):
-````bash
-npm install -g grunt-cli
-````
-Install Grunt dependencies:
-````bash
-npm install
-````
-Build Grunt project:
-````bash
-grunt build
-````
-The compress Grunt task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
-````bash
-grunt compress
-````
-## ⚖️ Copyright & License
+I greatly appreciate any help in maintaining to keep the documentation up to date. My English is not so good and I am trying to make the documentation more understandable.
 
-Copyright (C) 2015-2022 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
+If you are interested in collaborating with Simply, take a look at the [Contributing Guide](https://github.com/godofredoninja/simply/blob/master/CONTRIBUTING.md).
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](https://github.com/godofredoninja/simply/blob/master/CONTRIBUTING.md)].
+
+[![Simply Contributors](https://opencollective.com/simply/contributors.svg?width=890&button=false)](https://github.com/godofredoninja/simply/graphs/contributors)
+
+### Financial Contributors
+
+First I want to say thank you with all my heart and a million more Thank you. The [donation](https://www.paypal.me/godofredoninja) you have made has motivated me to continue working with the improvement and updating the theme.
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/simply/contribute)]
+
+- [Open Collective](https://opencollective.com/simply/contribute)
+- [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y7UB5Q8GVN3HN&source=url)
+- Bitcoin: **3QF5D9QyV9YQdPJVu2HLN8fkdWVbmezd5J**
+- Ethereum: **0x503bAA618d29774f03c7053218999Ad567a9fc71**
+
+[![Individuals Financial](https://user-images.githubusercontent.com/10253167/103444000-877b1b80-4c32-11eb-8377-7bedd46dbdf8.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y7UB5Q8GVN3HN&source=url)
+
+- [CMS Critic](http://www.cmscritic.com/) :star: :star: :star: :star:
+- [A Boundless World](https://www.aboundlessworld.com/) :star: :star:
+- [Dana Ross](https://vaalin.com/)
+- [Kip Ivan](https://github.com/Ingles-con-Kip)
+- [Wenjer India](http://qilinlab.com)
+- Etienne Triaud :star: :star:
+- Greg Rapp
+- Yannick Kordel
+- Bruno Brito Semedo
+- Ivan Rodriguez Segura
+- Rodrigo Franken Dutra
+- Diego Alcantara Zweifel
+- Andrew Wagner
+
+[![Individuals Financial](https://opencollective.com/simply/individuals.svg?width=890)](https://opencollective.com/simply)
+
+## Sponsored
+
+- [Digital Ocean](https://m.do.co/c/710a27a3b3de) using my [referral link]((https://m.do.co/c/710a27a3b3de)) and you will get free a **$100 in credit valid for 60 days**
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=710a27a3b3de&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
+## Credits
+
+- [Hodor AMP](https://github.com/godofredoninja/Hodor-AMP-Ghost)
+- [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
+- [Ionicons](https://github.com/ionic-team/ionicons)
+- [IcoMoon](https://icomoon.io/)
+- [Lazysizes](https://github.com/aFarkas/lazysizes)
+- [Medium Zoom](https://github.com/francoischalifour/medium-zoom)
+- [Prismjs](https://github.com/PrismJS/prism/)
+- [Inter Font Family](https://github.com/rsms/inter/)
+- [PT Serif Font Family](https://fonts.google.com/specimen/PT+Serif)
+- [Safari Light - Mockup](https://www.uplabs.com/posts/safari-light-version)
+- [Tiny Slider](https://github.com/ganlanyuan/tiny-slider)
+
+## Copyright & License
+
+Copyright (c) 2017-2022 GodoFredo - Released under the [GPLv3 license](LICENSE)
